@@ -19,6 +19,9 @@
 		E1C86A252026087A00A278A0 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C86A242026087A00A278A0 /* InterfaceController.swift */; };
 		E1C86A272026087A00A278A0 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C86A262026087A00A278A0 /* ExtensionDelegate.swift */; };
 		E1C86A292026087A00A278A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1C86A282026087A00A278A0 /* Assets.xcassets */; };
+		E1C86A3920260B9200A278A0 /* InfoInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C86A3820260B9200A278A0 /* InfoInterfaceController.swift */; };
+		E1C86A3B20260BB300A278A0 /* BeverageInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C86A3A20260BB300A278A0 /* BeverageInterfaceController.swift */; };
+		E1C86A3D20260BC200A278A0 /* PizzaInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C86A3C20260BC200A278A0 /* PizzaInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +83,9 @@
 		E1C86A262026087A00A278A0 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		E1C86A282026087A00A278A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1C86A2A2026087A00A278A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1C86A3820260B9200A278A0 /* InfoInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoInterfaceController.swift; sourceTree = "<group>"; };
+		E1C86A3A20260BB300A278A0 /* BeverageInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeverageInterfaceController.swift; sourceTree = "<group>"; };
+		E1C86A3C20260BC200A278A0 /* PizzaInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +152,9 @@
 		E1C86A232026087A00A278A0 /* MenuDemo WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				E1C86A3820260B9200A278A0 /* InfoInterfaceController.swift */,
+				E1C86A3A20260BB300A278A0 /* BeverageInterfaceController.swift */,
+				E1C86A3C20260BC200A278A0 /* PizzaInterfaceController.swift */,
 				E1C86A242026087A00A278A0 /* InterfaceController.swift */,
 				E1C86A262026087A00A278A0 /* ExtensionDelegate.swift */,
 				E1C86A282026087A00A278A0 /* Assets.xcassets */,
@@ -300,6 +309,9 @@
 			files = (
 				E1C86A272026087A00A278A0 /* ExtensionDelegate.swift in Sources */,
 				E1C86A252026087A00A278A0 /* InterfaceController.swift in Sources */,
+				E1C86A3B20260BB300A278A0 /* BeverageInterfaceController.swift in Sources */,
+				E1C86A3920260B9200A278A0 /* InfoInterfaceController.swift in Sources */,
+				E1C86A3D20260BC200A278A0 /* PizzaInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

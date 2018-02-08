@@ -29,6 +29,7 @@
     {
       "size" : "40x40",
       "idiom" : "watch",
+      "filename" : "MenuApp40@2x.jpg",
       "scale" : "2x",
       "role" : "appLauncher",
       "subtype" : "38mm"
@@ -46,6 +47,12 @@
       "scale" : "2x",
       "role" : "quickLook",
       "subtype" : "42mm"
+    },
+    {
+      "size" : "1024x1024",
+      "idiom" : "watch-marketing",
+      "filename" : "menuApp1024p.png",
+      "scale" : "1x"
     }
   ],
   "info" : {

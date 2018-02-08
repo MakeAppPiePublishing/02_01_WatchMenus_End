@@ -11,7 +11,45 @@ import Foundation
 
 
 class InterfaceController: WKInterfaceController {
-
+    
+    var count = 0
+    
+    @IBOutlet var countLabel: WKInterfaceLabel!
+    
+    @IBAction func addButton() {
+        count += 1
+        displayCount()
+    }
+    
+    @IBAction func subtractButton() {
+        count -= 1
+        if count < 0 {count = 0}
+        displayCount()
+    }
+    
+    @IBAction func gotoInfo() {
+        
+    }
+    
+    @IBAction func gotoPizza() {
+        pushController(withName: "Pizza", context: count)
+        
+    }
+    
+    @IBAction func gotoBeverage() {
+        pushController(withName: "Beverage", context: count)
+        
+    }
+    
+    @IBAction func clearCount(){
+        count = 0
+        displayCount()  
+    }
+    
+    func displayCount(){
+        let countString = String(format:"Count: %i",count)
+        countLabel.setText(countString)
+    }
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         

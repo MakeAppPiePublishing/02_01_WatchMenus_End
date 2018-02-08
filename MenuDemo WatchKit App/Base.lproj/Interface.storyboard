@@ -1,15 +1,124 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13771" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13756"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="MenuDemo_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="Label" id="dq6-PP-8N7"/>
+                        <group width="1" alignment="left" id="SR9-ES-ZGn">
+                            <items>
+                                <button width="0.5" alignment="left" title="+" id="Igg-ez-JOY">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="36"/>
+                                    <connections>
+                                        <action selector="addButton" destination="AgC-eL-Hgc" id="Pur-YJ-xKa"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" alignment="right" title="-" id="hhp-8D-wkr">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="36"/>
+                                    <connections>
+                                        <action selector="subtractButton" destination="AgC-eL-Hgc" id="iy4-8j-h0g"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="countLabel" destination="dq6-PP-8N7" id="LD5-G2-zdz"/>
+                    </connections>
+                </controller>
             </objects>
+            <point key="canvasLocation" x="150" y="36"/>
+        </scene>
+        <!--Info-->
+        <scene sceneID="YWx-Re-TTY">
+            <objects>
+                <controller identifier="Info" title="Info" id="kms-5f-l2N" customClass="InfoInterfaceController" customModule="MenuDemo_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Info" id="n5S-bG-CmX">
+                            <fontDescription key="font" type="system" pointSize="23"/>
+                        </label>
+                        <separator alignment="left" id="tc3-a7-LRk">
+                            <color key="color" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </separator>
+                        <label alignment="left" text="This is the info page. " numberOfLines="0" id="MlO-ND-yL6">
+                            <fontDescription key="font" type="system" pointSize="20"/>
+                        </label>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Okay" id="TwC-Li-f66">
+                            <color key="titleColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="okayButton" destination="kms-5f-l2N" id="n6G-9I-Gr8"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="150" y="315"/>
+        </scene>
+        <!--Beverage-->
+        <scene sceneID="t1z-Rh-oyH">
+            <objects>
+                <controller identifier="Beverage" title="Beverage" id="aeE-4R-xzc" customClass="BeverageInterfaceController" customModule="MenuDemo_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Beverages" id="T9P-R2-m1o">
+                            <fontDescription key="font" type="system" pointSize="23"/>
+                        </label>
+                        <separator alignment="left" id="ueP-uc-CQP"/>
+                        <label alignment="left" text="Coffee" numberOfLines="0" id="xcI-nc-lmR">
+                            <fontDescription key="font" type="system" pointSize="20"/>
+                        </label>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Done" id="AfK-p6-ttM">
+                            <color key="titleColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="doneButton" destination="aeE-4R-xzc" id="LuQ-sO-cra"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="quantityLabel" destination="xcI-nc-lmR" id="HHw-3L-WP8"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="456" y="33"/>
+        </scene>
+        <!--Pizza-->
+        <scene sceneID="Wl6-ev-Bp7">
+            <objects>
+                <controller identifier="Pizza" title="Pizza" id="G1g-00-F9X" customClass="PizzaInterfaceController" customModule="MenuDemo_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Pizza" id="GS1-wc-LzZ">
+                            <fontDescription key="font" type="system" pointSize="23"/>
+                        </label>
+                        <separator alignment="left" id="3br-Ki-XVT"/>
+                        <label alignment="left" text="Pizza" numberOfLines="0" id="izH-cl-NLA">
+                            <fontDescription key="font" type="system" pointSize="20"/>
+                        </label>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Done" id="R35-lp-EmC">
+                            <color key="titleColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="doneButton" destination="G1g-00-F9X" id="wBR-Bk-rsf"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="quantityLabel" destination="izH-cl-NLA" id="EL7-4r-bH6"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="456" y="315"/>
         </scene>
     </scenes>
 </document>
