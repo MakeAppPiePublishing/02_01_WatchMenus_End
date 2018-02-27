@@ -28,14 +28,13 @@ class InterfaceController: WKInterfaceController {
     }
     
     @IBAction func gotoInfo() {
-        
+        presentController(withName: "Info", context: nil)
     }
-    
     @IBAction func gotoPizza() {
         pushController(withName: "Pizza", context: count)
         
     }
-    
+
     @IBAction func gotoBeverage() {
         pushController(withName: "Beverage", context: count)
         

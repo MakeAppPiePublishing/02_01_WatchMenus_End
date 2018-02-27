@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13771" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13529" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
     <device id="watch38" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="watchOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13756"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13507"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
@@ -36,6 +36,30 @@
                             </items>
                         </group>
                     </items>
+                    <menu key="menu" id="KZl-to-Gtn">
+                        <items>
+                            <menuItem title="Info" icon="info" id="nD1-QS-FMh">
+                                <connections>
+                                    <action selector="gotoInfo" destination="AgC-eL-Hgc" id="N0U-eG-Zzs"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Pizza" image="Pizza" id="bFY-YZ-5gi">
+                                <connections>
+                                    <action selector="gotoPizza" destination="AgC-eL-Hgc" id="EFp-6b-jG0"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Beverage" image="Mug" id="oLB-We-Bw7">
+                                <connections>
+                                    <action selector="gotoBeverage" destination="AgC-eL-Hgc" id="cJK-Eq-hl1"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Clear" image="Clear" id="IqF-SC-9Y0">
+                                <connections>
+                                    <action selector="clearCount" destination="AgC-eL-Hgc" id="Ygd-Et-4ti"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
                     <connections>
                         <outlet property="countLabel" destination="dq6-PP-8N7" id="LD5-G2-zdz"/>
                     </connections>
